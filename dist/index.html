@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        亂世數碼求生攻略 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><h1 id="亂世數碼求生攻略" data-id="亂世數碼求生攻略"><a class="anchor hidden-xs" href="#亂世數碼求生攻略" title="亂世數碼求生攻略"><span class="octicon octicon-link"></span></a><span>亂世數碼求生攻略</span></h1><h2 id="前言" data-id="前言"><a class="anchor hidden-xs" href="#前言" title="前言"><span class="octicon octicon-link"></span></a><span>前言</span></h2><p><span>國安法通過咗，依家連和平示威都無辦法啦。</span><em><span>佢哋</span></em><span>依家有更大權力去搜查，甚至截聽你嘅資料。</span></p><p><span>即使你以為自己無嘢好擔心，依家試下攞部電話出嚟，揭下相簿，你一定至少搵到一兩嘢唔想你屋企人／情侶見到嘅嘢。試想像下你部手機，有一班國安專家日以繼夜去搵你、家人、朋友同手足嘅</span><strong><span>所有黑材料</span></strong><span>。你，知驚未？</span></p><p><span>可能你唔係戰線上嘅手足，手機亦都無咩比人睇；但係假如</span><em><span>佢哋</span></em><span>捉咗你，</span><em><span>佢哋</span></em><span>晒時間爆開你手機，就係為其他手足爭取喘息嘅空間。</span></p><h2 id="考慮風險" data-id="考慮風險"><a class="anchor hidden-xs" href="#考慮風險" title="考慮風險"><span class="octicon octicon-link"></span></a><span>考慮風險</span></h2><p><span>你要自行評估你自己會面對嘅威脅，再以作出行動。就一般而言，你可能會面對的風險包括：</span></p><ol>
+<li><span>政府以搜查令要求雲端服務（例：Google Drive、Microsoft OneDrive、DropBox等）提供你的個人檔案（見</span><a href="#%E4%BF%9D%E8%AD%B7%E9%9B%B2%E7%AB%AF%E4%B8%8A%E7%9A%84%E6%AA%94%E6%A1%88"><span>保護雲端上的檔案</span></a><span>）</span></li>
+<li><span>政府以搜查令／強行攞走你部電腦（見</span><a href="#%E4%BF%9D%E8%AD%B7%E6%AA%94%E6%A1%88"><span>保護電腦檔案</span></a><span>）</span></li>
+<li><span>政府以搜查令／不法手段截取你的通話紀錄（見</span><a href="#%E4%BF%9D%E8%AD%B7%E9%80%9A%E8%A9%B1"><span>保護通話</span></a><span>）</span></li>
+<li><span>政府以搜查令截取及／或記錄你的瀏覽紀錄（見</span><a href="#%E4%BF%9D%E8%AD%B7%E7%80%8F%E8%A6%BD%E7%B4%80%E9%8C%84"><span>保護瀏覽紀錄</span></a><span>）</span></li>
+</ol><div class="alert alert-success">
+<p><img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"><span> </span><strong><span>利申</span></strong><br>
+<span>以下有部份連結，作者會收到回佣架。我唔可以話俾你聽啲錢會去邊架。 </span><img class="emoji" alt=":shushing_face:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/shushing_face.png"></p>
+</div><h3 id="保護檔案" data-id="保護檔案"><a class="anchor hidden-xs" href="#保護檔案" title="保護檔案"><span class="octicon octicon-link"></span></a><span>保護檔案</span></h3><h3 id="一般守則" data-id="一般守則"><a class="anchor hidden-xs" href="#一般守則" title="一般守則"><span class="octicon octicon-link"></span></a><span>一般守則</span></h3><p><span>假如加密完，你部電腦最安全嘅時候就係</span><strong><span>熄咗機</span></strong><span>嘅時候。所以，假如</span><em><span>佢哋</span></em><span>上門，第一件事係</span><strong><span>熄機</span></strong><span>。開機時，系統會將用到嘅檔案解密，並放係RAM裡面；一旦熄機，RAM嘅資料會係再開機時洗走。</span></p><h3 id="保護上的檔案" data-id="保護上的檔案"><a class="anchor hidden-xs" href="#保護上的檔案" title="保護上的檔案"><span class="octicon octicon-link"></span></a><span>保護上的檔案</span></h3><p><span>就電腦上的檔案嚟講，你應至少</span><strong><span>將敏感檔案加密</span></strong><span>。你更可以直接執行</span><strong><span>全磁碟加密</span></strong><span>進一步保障自己。</span></p><p><span>Windows 8.1/10 Pro用戶可以以</span><a href="https://youtu.be/b0NxnCrrFSM?t=66" target="_blank" rel="noopener"><span>BitLocker進行全磁碟加密</span></a><span>。MacOS用戶可以</span><a href="https://support.apple.com/zh-hk/HT204837" target="_blank" rel="noopener"><span>FileVault進行全磁碟加密</span></a><span>。</span></p><p><span>假如你無法使用上述方法，或者想跨平台使用加密硬碟／手指，可以使用 </span><a href="https://www.veracrypt.fr/en/Downloads.html" target="_blank" rel="noopener"><span>VeraCrypt 建立加密虛擬分區</span></a><span>。</span></p><h3 id="保護雲端上的檔案" data-id="保護雲端上的檔案"><a class="anchor hidden-xs" href="#保護雲端上的檔案" title="保護雲端上的檔案"><span class="octicon octicon-link"></span></a><span>保護雲端上的檔案</span></h3><p><strong><span>所有</span></strong><span>你上傳到雲端的檔案應被當作</span><strong><span>已經外洩</span></strong><span>。你的目標應是透過加密，讓對方縱然取得你的檔案亦</span><strong><span>得物無所用</span></strong><span>。</span></p><p><a href="https://cryptomator.org/downloads/" target="_blank" rel="noopener"><span>Cryptomater</span></a><span>是一個開源的檔案加密軟件，以便於你的雲端網盤或本機上建立加密檔案庫。</span></p><p><span>假如你係前線手足，有文宣要交換，建議用</span><a href="https://nordlocker.com/" target="_blank" rel="noopener"><span>NordLocker</span></a><span>，可以加密地協作。</span></p><h2 id="保護通話紀錄" data-id="保護通話紀錄"><a class="anchor hidden-xs" href="#保護通話紀錄" title="保護通話紀錄"><span class="octicon octicon-link"></span></a><span>保護通話紀錄</span></h2><p><span>Telegram 當然是一個有效的加密通話軟件，然而考慮目前狀況，你亦應考慮以不同程式進行通訊。</span></p><h3 id="即時通訊" data-id="即時通訊"><a class="anchor hidden-xs" href="#即時通訊" title="即時通訊"><span class="octicon octicon-link"></span></a><span>即時通訊</span></h3><ul>
+<li><a href="https://www.signal.org/download/" target="_blank" rel="noopener"><span>Signal</span></a><span> 以同名的通訊制式（Signal Protocol）進行點對點加密通訊。</span></li>
+<li><a href="https://keybase.io/download/" target="_blank" rel="noopener"><span>Matrix</span></a><span> 以同名嘅分散式溝通制式（Matrix Protocol）制式保護你的通訊，支援多人加密通訊。</span></li>
+<li><a href="https://keybase.io/download/" target="_blank" rel="noopener"><span>Keybase</span></a><span> 以PGP（Pretty Good Privacy）制式保護你的通訊。</span></li>
+</ul><div class="alert alert-warning">
+<p><img class="emoji" alt=":confused:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/confused.png"><span> </span><strong><span>注意事項</span></strong><br>
+<span>雖然 Keybase 會以PGP保護你的資料，但最近 Keybase 被</span><a href="https://finance.yahoo.com/news/zoom-stock-privacy-china-connection-154032463.html" target="_blank" rel="noopener"><span>懷疑與內地有關連</span></a><span>的 </span><a href="https://keybase.io/blog/keybase-joins-zoom" target="_blank" rel="noopener"><span>Zoom 收購</span></a><span>。</span></p>
+</div><h3 id="電郵服務" data-id="電郵服務"><a class="anchor hidden-xs" href="#電郵服務" title="電郵服務"><span class="octicon octicon-link"></span></a><span>電郵服務</span></h3><ul>
+<li><a href="https://privatemail.com/members/aff.php?aff=133" target="_blank" rel="noopener"><span>PrivateMail</span></a><span> 以 PGP 制式保障你的電郵不受任何人截聽，包括 PrivateMail 自身。</span></li>
+<li><a href="https://mail.tutanota.com/signup" target="_blank" rel="noopener"><span>TutaNota</span></a><span> 以 AES 及 RSA 加密法保障你的電郵不受任何人截聽。</span></li>
+<li><a href="https://protonmail.com/signup" target="_blank" rel="noopener"><span>ProtonMail</span></a><span> 以同樣 PGP 制式保障你的電郵不受任何人截聽。</span></li>
+</ul><div class="alert alert-danger">
+<p><img class="emoji" alt=":no_entry:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/no_entry.png"><span> </span><strong><span>關於 Facebook／WhatsApp／Instagram</span></strong></p>
+<p><span>Facebook 一直有意進軍中國，它們亦有意進行 </span><strong><span>「中國式改造」</span></strong><span>，不排除Facebook 會犧牲用戶私隱以取悅它們。</span></p>
+<p><span>你應盡量避免使用任何 Facebook 及旗下服務，包括 Facebook／WhatsApp／Instagram／Oculus 等。Facebook 亦有經 Facebook Pixel 和「Like Button」等對用戶進行跨網站追蹤。你可以瀏覽器插件如 </span><a href="https://chrome.google.com/webstore/detail/block-facebook/gebclbfnlcebcljmgblacllmjkfidoef" target="_blank" rel="noopener"><span>Block Facebook (Chrome)</span></a><span> 或者 </span><a href="https://addons.mozilla.org/en-US/firefox/addon/facebook_blocker/" target="_blank" rel="noopener"><span>Facebook Blocker (Firefox)</span></a><span> 完全封鎖 Facebook。</span></p>
+</div><h2 id="保護瀏覽紀錄" data-id="保護瀏覽紀錄"><a class="anchor hidden-xs" href="#保護瀏覽紀錄" title="保護瀏覽紀錄"><span class="octicon octicon-link"></span></a><span>保護瀏覽紀錄</span></h2><h3 id="電腦上的記錄" data-id="電腦上的記錄"><a class="anchor hidden-xs" href="#電腦上的記錄" title="電腦上的記錄"><span class="octicon octicon-link"></span></a><span>電腦上的記錄</span></h3><p><span>你可以於瀏覽器設定中選擇自動刪除瀏覽紀錄，或者使用無痕模式上網。</span></p><h3 id="電腦外的記錄" data-id="電腦外的記錄"><a class="anchor hidden-xs" href="#電腦外的記錄" title="電腦外的記錄"><span class="octicon octicon-link"></span></a><span>電腦外的記錄</span></h3><p><span>當你上網時，網絡服務供應商（ISP，如電訊盈科／HKT/PCCW、香港寬頻、和記電訊等）會知悉你瀏覽的網站，並有可能藉此進行篩查。就此，你可以透過使用虛擬私人網路（Virtual Private Network，VPN）加密從你的裝置到 VPN 公司伺服器的通訊。</span></p><div class="alert alert-danger">
+<p><img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"><span> </span><strong><span>你的資料並沒有那麼危險</span></strong><br>
+<span>ISP 了解的資料其實很有限，假如你瀏覽</span><code>https://www.youtube.com/watch?v=SToLjzQEaaE</code><span>，ISP 只會了解你曾瀏覽</span><code>www.youtube.com</code><span>，但無法了解你曾觀看的影片、輸入的密碼等。</span></p>
+<p><span>由於TLS（傳輸層安全性協定），你與大部分網站的通訊其實已經進行加密。只要你瀏覽網站的網址列上有 </span><img class="emoji" alt=":lock:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/lock.png"><span> ，你瀏覽器與該網站之間經已建立加密通道。第三方（如ISP、政府等）亦無法窺視你的通訊。</span></p>
+<p><span>然而，於加密通道未建立之前，你的裝置會以未加密方式查閱 IP 地址。這類型的資料仍然可能會被用作內容審查等用途。</span></p>
+</div><div class="alert alert-warning">
+<p><img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"><span> </span><strong><span>購買 VPN 服務時要注意</span></strong></p>
+<ol>
+<li><strong><span>VPN 是否有零紀錄政策。</span></strong><span> VPN 會代你傳達與網站之間的通訊，伺服器上保留的任何資料（包括連線紀錄、登入記錄等），就等同你電腦上瀏覽紀錄，均有可能成為傷害你權益的證據。所以選擇 VPN 時要肯定有</span><strong><span>零紀錄政策</span></strong><span>（包括登入記錄、連線紀錄、裝置記錄等等）</span></li>
+<li><strong><span>小心細閱評價。</span></strong><span> VPN市場多依賴網上評論和推薦作推廣。有部份網站會推高夥伴 VPN 的評價，甚至有公司會直接建立自己的評價網站作宣傳。你應仔細閱讀評價，並判斷該 VPN 是否適合自己的需要。</span></li>
+<li><strong><span>留意 VPN 營運商資料。</span></strong><span> 市面有部份 VPN 品牌</span><a href="https://vpnpro.com/wp-content/uploads/Infographic-VPNpro-97-VPN-products-run-by-just-23-companies.pdf" target="_blank" rel="noopener"><span>欠缺透明度</span></a><span>。例如市面上很多 VPN 品牌其實是由同一公司營運。另外，有部份公司總部會位於中國或者與五／六／九／十四眼聯盟。同樣，你應仔細該 VPN 的資料並自行判斷。盡量避免 透明度不足（如未有指明紀錄政策、隱瞞公司資料／註冊地等）的 VPN。</span></li>
+</ol>
+</div><table>
+<thead>
+<tr>
+<th><span>VPN 服務</span></th>
+<th><span>公司總部</span></th>
+<th><span>最優惠月費（美金）</span></th>
+<th><span>承諾期（月）</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://nordvpn.com" target="_blank" rel="noopener"><span>NordVPN</span></a></td>
+<td><span>巴拿馬</span></td>
+<td><span>$3.49</span></td>
+<td><span>36</span></td>
+</tr>
+<tr>
+<td><a href="https://protonvpn.com/" target="_blank" rel="noopener"><span>ProtonVPN</span></a></td>
+<td><span>瑞士</span></td>
+<td><span>$6.63</span></td>
+<td><span>24</span></td>
+</tr>
+<tr>
+<td><a href="https://mullvad.net/" target="_blank" rel="noopener"><span>Mullvad</span></a></td>
+<td><span>瑞典</span></td>
+<td><span>$5.50</span></td>
+<td><span>1</span></td>
+</tr>
+<tr>
+<td><a href="https://surfshark.com/" target="_blank" rel="noopener"><span>SurfShark</span></a></td>
+<td><span>英屬處女群島</span></td>
+<td><span>$2.49</span></td>
+<td><span>24</span></td>
+</tr>
+<tr>
+<td><a href="https://www.privateinternetaccess.com/" target="_blank" rel="noopener"><span>Private Internet Access</span></a></td>
+<td><span>曼島</span></td>
+<td><span>$2.85</span></td>
+<td><span>14</span></td>
+</tr>
+</tbody>
+</table><h3 id="實際使用" data-id="實際使用"><a class="anchor hidden-xs" href="#實際使用" title="實際使用"><span class="octicon octicon-link"></span></a><span>實際使用</span></h3><p><span>普遍的 VPN 服務都提供自己的應用程式。登入後就已經完成設定。但以備不時之需，你亦可以系統原生／非廠商指定軟件方式啟動 VPN。</span></p><p><span>常見的VPN制式包括IPSec（系統原生）、OpenVPN（較新制式，需另行安裝）和WireGuard（最新制式，最快，需另行安裝）。PPTP制式經已過氣，並有保安漏洞，不具任何安全性。</span></p><h4 id="下載網址" data-id="下載網址"><a class="anchor hidden-xs" href="#下載網址" title="下載網址"><span class="octicon octicon-link"></span></a><span>下載網址</span></h4><ul>
+<li><strong><span>OpenVPN</span></strong>
+<ul>
+<li><a href="https://openvpn.net/community-downloads/" target="_blank" rel="noopener"><span>Windows</span></a></li>
+<li><a href="https://tunnelblick.net/release/Latest_Tunnelblick_Stable.dmg" target="_blank" rel="noopener"><span>MacOS (TunnelBlick)</span></a></li>
+<li><a href="https://f-droid.org/en/packages/de.blinkt.openvpn/" target="_blank" rel="noopener"><span>Android</span></a></li>
+<li><a href="https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8" target="_blank" rel="noopener"><span>iOS</span></a></li>
+</ul>
+</li>
+<li><strong><span>WireGuard</span></strong>
+<ul>
+<li><a href="https://www.wireguard.com/install/" target="_blank" rel="noopener"><span>Windows</span></a></li>
+<li><a href="https://itunes.apple.com/us/app/wireguard/id1451685025?ls=1&amp;mt=12" target="_blank" rel="noopener"><span>MacOS</span></a></li>
+<li><a href="https://f-droid.org/en/packages/com.wireguard.android/" target="_blank" rel="noopener"><span>Android</span></a></li>
+<li><a href="https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&amp;mt=8" target="_blank" rel="noopener"><span>iOS</span></a></li>
+</ul>
+</li>
+</ul><h2 id="兩手準備" data-id="兩手準備"><a class="anchor hidden-xs" href="#兩手準備" title="兩手準備"><span class="octicon octicon-link"></span></a><span>兩手準備</span></h2><p><span>以防應用程式被強行下架／封鎖，你應：</span></p><ul>
+<li><span>安裝所有可能需要的程式，並做好備份</span></li>
+<li><span>[Android] 準備以Play Store以外的方式安裝應用程式（安裝</span><a href="https://f-droid.org/" target="_blank" rel="noopener"><span>F-Droid</span></a><span>／下載APK檔）</span></li>
+<li><span>準備用不同方法連線到 VPN （以服務應用程式、系統原生／非廠商指定軟件連線）</span></li>
+</ul><h1 id="技術資料" data-id="技術資料"><a class="anchor hidden-xs" href="#技術資料" title="技術資料"><span class="octicon octicon-link"></span></a><span>技術資料</span></h1><p><span>而到係你唔需要知，但係你可能好奇嘅嘢。唔睇都得。</span></p><h2 id="乜嘢係AES同RSA？" data-id="乜嘢係AES同RSA？"><a class="anchor hidden-xs" href="#乜嘢係AES同RSA？" title="乜嘢係AES同RSA？"><span class="octicon octicon-link"></span></a><span>乜嘢係AES同RSA？</span></h2><p><span>AES同RSA都最常用同可靠嘅加密法，但係各自都有唔同。</span></p><h3 id="AES" data-id="AES"><a class="anchor hidden-xs" href="#AES" title="AES"><span class="octicon octicon-link"></span></a><span>AES</span></h3><p><span>AES（Advanced Encryption Standard）係最常用，亦都係最可靠嘅</span><strong><span>對稱式</span></strong><span>加密法（Symmetric cryptography）。簡單而言，就係你知道密碼就可以加密同解密嘅加密法。</span></p><p><span>普遍加密程式會自行GEN一條好長嘅加密輪，然後叫你比個密碼去保護嗰條加密鑰。目前加密鑰長度至少要有</span><em><span>128 bit</span></em><span>。</span></p><h3 id="RSA" data-id="RSA"><a class="anchor hidden-xs" href="#RSA" title="RSA"><span class="octicon octicon-link"></span></a><span>RSA</span></h3><p><span>RSA就係常用嘅</span><strong><span>非對稱</span></strong><span>加密法。RSA有</span><em><span>公鑰</span></em><span>同</span><em><span>私鑰</span></em><span>：加密用公鑰，解密用私鑰；所以私鑰自己收埋，公鑰比其他人睇。</span></p><p><span>目前加密鑰長度至少要有</span><em><span>2048 bit</span></em><span>。</span></p><h3 id="加密法總結" data-id="加密法總結"><a class="anchor hidden-xs" href="#加密法總結" title="加密法總結"><span class="octicon octicon-link"></span></a><span>加密法總結</span></h3><table>
+<thead>
+<tr>
+<th><span>加密法</span></th>
+<th><span>加密用</span></th>
+<th><span>解密用</span></th>
+<th><span>優點</span></th>
+<th style="text-align:left"><span>缺點</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>AES</span></td>
+<td><span>加密鑰</span></td>
+<td><span>加密鑰</span></td>
+<td><span>加密速度快</span></td>
+<td style="text-align:left"><span>加密方會知道點解密，所以可以解密所有嘢</span></td>
+</tr>
+<tr>
+<td><span>RSA</span></td>
+<td><span>公鑰</span></td>
+<td><span>私鑰</span></td>
+<td><span>加密方唔知點解密（Zero Knowledge）</span></td>
+<td style="text-align:left"><span>加密速度慢</span></td>
+</tr>
+</tbody>
+</table><h2 id="乜嘢係PGP、Signal-或者-Matrix-Protocol？" data-id="乜嘢係PGP、Signal-或者-Matrix-Protocol？"><a class="anchor hidden-xs" href="#乜嘢係PGP、Signal-或者-Matrix-Protocol？" title="乜嘢係PGP、Signal-或者-Matrix-Protocol？"><span class="octicon octicon-link"></span></a><span>乜嘢係PGP、Signal 或者 Matrix Protocol？</span></h2><p><span>因為直接用加密法係幾困難嘅事（要交換公鑰之類），所以有一啲現成嘅</span><strong><span>加密制式</span></strong><span>簡化整個過程。</span></p><h3 id="PGP／GPG" data-id="PGP／GPG"><a class="anchor hidden-xs" href="#PGP／GPG" title="PGP／GPG"><span class="octicon octicon-link"></span></a><span>PGP／GPG</span></h3><p><span>普遍用於電郵上，但係亦都可以用嚟做加密檔案傳輸。</span></p><p><span>斯洛登當時同記者溝通就係靠依個加密制式避過CIA調查。</span></p><p><span>大部分加密電郵都係靠依個技術保護你嘅電郵。</span></p><p><span>一般嚟講，公鑰只需交換一次，然後就會沿用落去。</span></p><h3 id="Signal-Protocol" data-id="Signal-Protocol"><a class="anchor hidden-xs" href="#Signal-Protocol" title="Signal-Protocol"><span class="octicon octicon-link"></span></a><span>Signal Protocol</span></h3><p><span>比較近代嘅制式，有Perfect forward secrecy保障（俾</span><em><span>佢哋</span></em><span>截聽到一個信息就只有一個信息外洩），不過只限單對單通話。詳細解釋睇</span><a href="https://www.youtube.com/watch?v=9sO2qdTci-s" target="_blank" rel="noopener"><span>依條片</span></a><span>。</span></p><h3 id="Signal-Protocol1" data-id="Signal-Protocol"><a class="anchor hidden-xs" href="#Signal-Protocol1" title="Signal-Protocol1"><span class="octicon octicon-link"></span></a><span>Signal Protocol</span></h3><p><span>比較近代嘅制式，都有Perfect forward secrecy保障，支援多人解密通話。詳細解釋睇</span><a href="https://youtu.be/DffJmQyBkR8?t=97" target="_blank" rel="noopener"><span>依條片</span></a><span>。</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#亂世數碼求生攻略" title="亂世數碼求生攻略">亂世數碼求生攻略</a><ul class="nav">
+<li><a href="#前言" title="前言">前言</a></li>
+<li><a href="#考慮風險" title="考慮風險">考慮風險</a><ul class="nav">
+<li><a href="#保護檔案" title="保護檔案">保護檔案</a></li>
+<li><a href="#一般守則" title="一般守則">一般守則</a></li>
+<li><a href="#保護上的檔案" title="保護上的檔案">保護上的檔案</a></li>
+<li><a href="#保護雲端上的檔案" title="保護雲端上的檔案">保護雲端上的檔案</a></li>
+</ul>
+</li>
+<li><a href="#保護通話紀錄" title="保護通話紀錄">保護通話紀錄</a><ul class="nav">
+<li><a href="#即時通訊" title="即時通訊">即時通訊</a></li>
+<li><a href="#電郵服務" title="電郵服務">電郵服務</a></li>
+</ul>
+</li>
+<li class=""><a href="#保護瀏覽紀錄" title="保護瀏覽紀錄">保護瀏覽紀錄</a><ul class="nav">
+<li><a href="#電腦上的記錄" title="電腦上的記錄">電腦上的記錄</a></li>
+<li><a href="#電腦外的記錄" title="電腦外的記錄">電腦外的記錄</a></li>
+<li class=""><a href="#實際使用" title="實際使用">實際使用</a></li>
+</ul>
+</li>
+<li><a href="#兩手準備" title="兩手準備">兩手準備</a></li>
+</ul>
+</li>
+<li><a href="#技術資料" title="技術資料">技術資料</a><ul class="nav">
+<li><a href="#乜嘢係AES同RSA？" title="乜嘢係AES同RSA？">乜嘢係AES同RSA？</a><ul class="nav">
+<li><a href="#AES" title="AES">AES</a></li>
+<li><a href="#RSA" title="RSA">RSA</a></li>
+<li><a href="#加密法總結" title="加密法總結">加密法總結</a></li>
+</ul>
+</li>
+<li><a href="#乜嘢係PGP、Signal-或者-Matrix-Protocol？" title="乜嘢係PGP、Signal 或者 Matrix Protocol？">乜嘢係PGP、Signal 或者 Matrix Protocol？</a><ul class="nav">
+<li><a href="#PGP／GPG" title="PGP／GPG">PGP／GPG</a></li>
+<li><a href="#Signal-Protocol" title="Signal Protocol">Signal Protocol</a></li>
+<li><a href="#Signal-Protocol1" title="Signal Protocol">Signal Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#亂世數碼求生攻略" title="亂世數碼求生攻略">亂世數碼求生攻略</a><ul class="nav">
+<li><a href="#前言" title="前言">前言</a></li>
+<li><a href="#考慮風險" title="考慮風險">考慮風險</a><ul class="nav">
+<li><a href="#保護檔案" title="保護檔案">保護檔案</a></li>
+<li><a href="#一般守則" title="一般守則">一般守則</a></li>
+<li><a href="#保護上的檔案" title="保護上的檔案">保護上的檔案</a></li>
+<li><a href="#保護雲端上的檔案" title="保護雲端上的檔案">保護雲端上的檔案</a></li>
+</ul>
+</li>
+<li><a href="#保護通話紀錄" title="保護通話紀錄">保護通話紀錄</a><ul class="nav">
+<li><a href="#即時通訊" title="即時通訊">即時通訊</a></li>
+<li><a href="#電郵服務" title="電郵服務">電郵服務</a></li>
+</ul>
+</li>
+<li class=""><a href="#保護瀏覽紀錄" title="保護瀏覽紀錄">保護瀏覽紀錄</a><ul class="nav">
+<li><a href="#電腦上的記錄" title="電腦上的記錄">電腦上的記錄</a></li>
+<li><a href="#電腦外的記錄" title="電腦外的記錄">電腦外的記錄</a></li>
+<li class=""><a href="#實際使用" title="實際使用">實際使用</a></li>
+</ul>
+</li>
+<li><a href="#兩手準備" title="兩手準備">兩手準備</a></li>
+</ul>
+</li>
+<li><a href="#技術資料" title="技術資料">技術資料</a><ul class="nav">
+<li><a href="#乜嘢係AES同RSA？" title="乜嘢係AES同RSA？">乜嘢係AES同RSA？</a><ul class="nav">
+<li><a href="#AES" title="AES">AES</a></li>
+<li><a href="#RSA" title="RSA">RSA</a></li>
+<li><a href="#加密法總結" title="加密法總結">加密法總結</a></li>
+</ul>
+</li>
+<li><a href="#乜嘢係PGP、Signal-或者-Matrix-Protocol？" title="乜嘢係PGP、Signal 或者 Matrix Protocol？">乜嘢係PGP、Signal 或者 Matrix Protocol？</a><ul class="nav">
+<li><a href="#PGP／GPG" title="PGP／GPG">PGP／GPG</a></li>
+<li><a href="#Signal-Protocol" title="Signal Protocol">Signal Protocol</a></li>
+<li><a href="#Signal-Protocol1" title="Signal Protocol">Signal Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
